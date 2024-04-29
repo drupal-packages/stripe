@@ -3,7 +3,7 @@
 namespace Drupal\stripe\Event;
 
 use Stripe\Event as StripeEvent;
-use Symfony\Component\EventDispatcher\Event;
+use Drupal\Component\EventDispatcher\Event;
 
 /**
  * Wraps a stripe event for webhook.

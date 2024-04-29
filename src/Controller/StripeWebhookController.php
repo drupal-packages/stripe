@@ -22,14 +22,14 @@ class StripeWebhookController extends ControllerBase {
   /**
    * The event dispatcher service.
    *
-   * @var \Symfony\Component\EventDispatcher\EventDispatcherInterface
+   * @var EventDispatcherInterface
    */
   protected $eventDispatcher;
 
   /**
    * Creates a new instance.
    *
-   * @param \Symfony\Component\EventDispatcher\EventDispatcherInterface $event_dispatcher
+   * @param EventDispatcherInterface $event_dispatcher
    *   The event dispatcher.
    */
   public function __construct(EventDispatcherInterface $event_dispatcher) {
@@ -40,7 +40,7 @@ class StripeWebhookController extends ControllerBase {
    * When this controller is created,
    * it will get the di_example.talk service and store it.
    *
-   * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
+   * @param ContainerInterface $container
    *   The container.
    *
    * @return static
@@ -93,7 +93,7 @@ class StripeWebhookController extends ControllerBase {
 
     // Dispatch the webhook event.
     $this->eventDispatcher
-      ->dispatch(StripeEvents::WEBHOOK, new StripeWebhookEvent($event));
+      ->dispatch(new StripeWebhookEvent($event), StripeEvents::WEBHOOK);
 
     return new Response('OK', Response::HTTP_OK);
   }
