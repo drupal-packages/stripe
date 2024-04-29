@@ -9,5 +9,8 @@
   "support": {
     "issues": "https://github.com/drupal-packages/stripe/issues",
     "source": "https://github.com/drupal-packages/stripe"
+  },
+  "require": {
+    "stripe/stripe-php": "^7.0"
   }
 }
