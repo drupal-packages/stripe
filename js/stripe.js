@@ -149,7 +149,7 @@
                 }
               }
 
-              $(form).once('stripe-single-submit').on('submit.stripeSingleSubmit', onFormSubmit);
+              $(once('stripe-single-submit', form)).on('submit.stripeSingleSubmit', onFormSubmit);
 
               // Adding a stripe processing class using our custom events
               $(form).on('drupalStripe.submitStart', function(e) {

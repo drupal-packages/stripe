@@ -15,3 +15,4 @@ stripe.js:
     - stripe/stripe
     - core/drupalSettings
     - core/jquery
+    - core/once
