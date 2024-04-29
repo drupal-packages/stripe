@@ -1,16 +1,13 @@
 {
-  "name": "drupal/stripe",
+  "name": "drupal-packages/stripe",
   "type": "drupal-module",
-  "description": "Stripe",
+  "description": "Stripe 1.x implementations",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/stripe",
+  "homepage": "https://github.com/drupal-packages/stripe",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://www.drupal.org/project/issues/stripe",
-    "source": "http://cgit.drupalcode.org/stripe"
-  },
-  "require": {
-    "stripe/stripe-php": "^7.0"
+    "issues": "https://github.com/drupal-packages/stripe/issues",
+    "source": "https://github.com/drupal-packages/stripe"
   }
 }
